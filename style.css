@@ -10,9 +10,43 @@ body{
 }
 
 .main-container{
-    background: rgba(255,255,255,.5);
+    background: rgba(255,255,255,.3);
+    width: 90%;
+    max-width: 500px;
     box-shadow: 0 4px 8px rgba(0,0,0,.5);
+    border-radius: 10px;
     text-align: center;
+    padding: 25px;
     box-sizing: border-box;
+    font-size: 1.2rem;
     
+}
+.input-el{
+    height: 50px;
+    width: 250px;
+    padding: 0 30px;
+    border-radius: 5px;
+    border-color: rgba(255,255,255,.4);
+    background-color: rgba(255,255,255,.6);
+    outline: none;
+    font-size: 1.5rem;
+
+}
+
+.input-el::placeholder{
+    font-size: 1.5rem;
+    color: lightgrey;
+    text-align: center;
+}
+
+.word-audio{
+    width: 200px;
+}
+
+.word-definition-container{
+    display: none;
+}
+
+.info-txt{
+    color: grey;
 }
