@@ -23,11 +23,10 @@ body{
 }
 .input-el{
     height: 50px;
-    width: 250px;
-    padding: 0 30px;
+    width: 220px;
     border-radius: 5px;
     border-color: rgba(255,255,255,.4);
-    background-color: rgba(255,255,255,.6);
+    background-color: rgba(255, 255, 255, 0.894);
     outline: none;
     font-size: 1.5rem;
 
