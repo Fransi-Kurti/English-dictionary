@@ -6,6 +6,8 @@ const wordTitle = document.getElementById("word-title");
 
 const wordMeaning = document.getElementById("meaning");
 
+const wordAudio = document.getElementById("word-audio");
+
 const wordDefinitionContainer = document.getElementById("word-definition-container");
 
 async function apiFetch(word){
@@ -18,6 +20,10 @@ async function apiFetch(word){
         const result = await fetch(dictionaryUrl).then((res) => res.json());
         infoTxt.style.display = "none";
         wordDefinitionContainer.style.display = "block";
+        wordTitle.innerText = result[0].word;
+        wordMeaning.innerText = result[0].meanings[0].definitions[0].definition;
+        console.log(result);
+        wordAudio.src = result[0].phonetics[0].audio;
     } catch (error) {
         
     }
